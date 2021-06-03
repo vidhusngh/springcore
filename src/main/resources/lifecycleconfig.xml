@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="item1" class="com.springcore.lifecycyle.samosa" init-method="init" destroy-method="destroy">
+    <property name="price" value="10"/>
+    </bean>
+    <bean name="pepsi" class="com.springcore.lifecycyle.pepsi">
+        <property name="price" value="35"/>
+    </bean>
+    <bean name="roll" class="com.springcore.lifecycyle.roll">
+        <property name="price" value="33"/>
+    </bean>
+</beans>
